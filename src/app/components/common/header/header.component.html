@@ -1,0 +1,26 @@
+<!-- Masthead -->
+<header *ngIf="headerData" class="masthead" [ngStyle]="{'padding-top': '10rem',
+    'padding-bottom': 'calc(10rem - 72px)',
+    'background': bg,
+    'background-position': 'center',
+    'background-repeat': 'no-repeat',
+    'background-attachment': 'scroll',
+    'background-size': 'cover'}">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-10 align-self-end">
+                <h1 class="text-uppercase text-white font-weight-bold" *ngIf="headerData">{{ headerData.mainText }}</h1>
+                <hr class="divider my-4">
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="text-white-75 font-weight-light mb-5" *ngIf="headerData">{{ headerData.secondaryText}}</p>
+
+                <div *ngIf="headerData">
+                    <a *ngIf="headerData.slug === 'home'" class="btn btn-primary btn-xl js-scroll-trigger mr-2" [routerLink]="['/audiovisuales']">Audiovisuales</a>
+                    <a *ngIf="headerData.slug === 'home'" class="btn btn-primary btn-xl js-scroll-trigger ml-2" [routerLink]="['/programacion']">Programación</a>
+                    <p *ngIf="headerData.slug === 'home'" class="text-white-75 font-weight-light mt-2 text-primary"><strong>¡Trabajemos juntos!</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,31 @@
+<app-header slug="audiovisuales"></app-header>
+
+
+
+<div *ngIf="data">
+    <div class="card bg-dark text-white" *ngFor="let item of data">
+        <img src="http://localhost:3000/images/audiovisual/{{item.img}}" class="card-img" alt="...">
+        <div class="card-img-overlay p-5 mt-5">
+            <div class="imgbg p-5">
+                <h3 class="card-title">{{ item.title }}</h3>
+                <div class="card-text mt-5" [innerHTML]="item.body"></div>
+                <button type="button" class="btn btn-outline-light mt-5" (click)="openModal(template, item.title, item.videoid)">Ver video</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+
+<ng-template #template>
+    <div class="modal-header" *ngIf="videoSelTitle && videoId">
+        <h5 class="modal-title pull-left">{{videoSelTitle}}</h5>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
+    <div class="modal-body">
+        <iframe [src]="videoId | videoVimeo" width="100%" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+</ng-template>

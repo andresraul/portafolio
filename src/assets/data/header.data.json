@@ -1,0 +1,31 @@
+[{
+        "slug": "home",
+        "mainText": "Creador Audiovisual y Full Stack Development",
+        "secondaryText": "Hola, mi nombre es Andrés Mateo y este es mi portafolio de trabajp.",
+        "bg": "bg-masthead1.jpg"
+    },
+    {
+        "slug": "audiovisuales",
+        "mainText": "Portafolio en el área Audiovisual",
+        "secondaryText": "Este parte de mi experiencia en el área aduivisual. Aquí podras ver parte de mi trabajo como editor, motiongrapher, director y otras áreas en las que me he involucrado.",
+        "bg": "bg-masthead2.jpg"
+    },
+    {
+        "slug": "programacion",
+        "mainText": "Portafolio en el área de programación",
+        "secondaryText": "Aquí podrás apreciar parte de mi experiencia como programador full satack ¡Adelante, pincha donde quieras y aprende más sobre mi!",
+        "bg": "bg-masthead3.jpg"
+    },
+    {
+        "slug": "sobre-mi",
+        "mainText": "Bio",
+        "secondaryText": "Quién soy, a qué me dedico, cual es mi rumbo...",
+        "bg": "bg-masthead4.jpg"
+    },
+    {
+        "slug": "contacto",
+        "mainText": "Contáctame",
+        "secondaryText": "Por acá pudes escribirme",
+        "bg": "bg-masthead5.jpg"
+    }
+]
