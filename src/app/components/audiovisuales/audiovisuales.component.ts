@@ -15,6 +15,7 @@ export class AudiovisualesComponent implements OnInit {
 
   videoSelTitle: string;
   videoId: any;
+  videoText: string;
 
   modalRef: BsModalRef;
 
@@ -26,13 +27,16 @@ export class AudiovisualesComponent implements OnInit {
     .subscribe((resp: any) => {
       this.data = resp.audiovisuales;
 
-    }, (err) => {});
+    }, (err) => {
+      console.log(err);
+    });
   }
 
-  openModal(template: TemplateRef<any>, title, id) {
+  openModal(template: TemplateRef<any>, title, id, text) {
     this.modalRef = this.modalService.show(template);
     this.videoSelTitle = title;
     this.videoId = id;
+    this.videoText = text;
   }
 
 }

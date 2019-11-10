@@ -7,6 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  navbar = [
+    {
+      name: 'Inicio',
+      route: '/home'
+    },
+    {
+      name: 'Audiovisuales',
+      route: '/audiovisuales'
+    },
+    {
+      name: 'Programación',
+      route: '/programacion'
+    },
+    {
+      name: 'Sobre mí',
+      route: '/sobre-mi'
+    },
+    {
+      name: 'Contacto',
+      route: '/contacto'
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {

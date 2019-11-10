@@ -1,6 +1,6 @@
 # Portafolio
 
-Este es mi portafolo personal donde pongo a disposición de los Interesados una muestra de mi experiencias profesional en las áreas de Audiovisuales y Programación. 
+Este es mi portafolo personal donde pongo a disposición de los interesados una muestra de mi experiencias profesional en las áreas de Audiovisuales y Programación. 
 
 ## Instalar paquetes de node:
 
