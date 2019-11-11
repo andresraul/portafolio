@@ -14,6 +14,10 @@ let programacionSchema = new Schema({
         type: String,
         required: [true, 'El texto principal el obligatorio.']
     },
+    githuburl: {
+        type: String,
+        required: false
+    },
     img: {
         type: String,
         required: false

@@ -4,14 +4,15 @@ const Programacion = require('../../../models/programacion');
 const programacionCtrlsPost = {};
 
 programacionCtrlsPost.createProgramacionSample = async(req, res, next) => {
-    const { title, body } = req.body;
+    const { title, body, githuburl } = req.body;
 
     const date = new Date().getTime();
 
     const programacion = new Programacion({
         date,
         title,
-        body
+        body,
+        githuburl
     })
 
     programacion.save()
