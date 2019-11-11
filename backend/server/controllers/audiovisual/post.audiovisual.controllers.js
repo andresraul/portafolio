@@ -19,7 +19,7 @@ audiovisualCtrlsPost.createAudiovisualSample = async(req, res, next) => {
         .then((audiovisualDB) => {
             res.json({
                 ok: true,
-                audiovisualDB
+                data: audiovisualDB
             })
         })
         .catch((err) => {
