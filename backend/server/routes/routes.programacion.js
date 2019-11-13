@@ -1,7 +1,11 @@
 const express = require('express');
 const app = express();
-const { programacionCtrlsPost } = require('../controllers/programacion/index');
+const { programacionCtrlsPost, programacionCtrlsPut, programacionCtrlsGet } = require('../controllers/programacion/index');
 
-app.post('/programacion', [programacionCtrlsPost.createProgramacionSample])
+app.post('/programacion', [programacionCtrlsPost.createProgramacionSample]);
+app.put('/programacion/:id', [programacionCtrlsPut.updateProgramacion]);
+app.get('/programacion', [programacionCtrlsGet.getAllProgramacion]);
+
+
 
 module.exports = app;
