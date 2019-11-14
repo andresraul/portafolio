@@ -5,7 +5,7 @@ const { imageProgramacionCtrlsPut, imageArrayProgramacionCtrlsPost } = require('
 
 
 app.put('/upload/programacion-img/:id', [imageProgramacionCtrlsPut.catchAndSaveImage]);
-app.put('/upload/programacion-img-arr/:id', [imageArrayProgramacionCtrlsPost.catchAndSaveImages]);
+app.post('/upload/programacion-img-arr/:id', [imageArrayProgramacionCtrlsPost.catchAndSaveImages]);
 
 
 
