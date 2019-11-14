@@ -21,6 +21,10 @@ let programacionSchema = new Schema({
     img: {
         type: String,
         required: false
+    },
+    imgArray: {
+        type: [String],
+        required: false
     }
 });
 
