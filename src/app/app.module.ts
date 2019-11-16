@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { VideoVimeoPipe } from './pipes/video-vimeo.pipe';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
 
 
@@ -35,7 +36,8 @@ import { VideoVimeoPipe } from './pipes/video-vimeo.pipe';
     ProgramacionComponent,
     ContactoComponent,
     HeaderComponent,
-    VideoVimeoPipe
+    VideoVimeoPipe,
+    ProyectoComponent
   ],
   imports: [
     BrowserModule,

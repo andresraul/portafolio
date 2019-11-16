@@ -6,6 +6,8 @@ import { AudiovisualesComponent } from './components/audiovisuales/audiovisuales
 import { ProgramacionComponent } from './components/programacion/programacion.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
+
 
 
 export const Rutas: Routes = [
@@ -13,6 +15,7 @@ export const Rutas: Routes = [
          { path: 'home', component: HomeComponent },
          { path: 'audiovisuales', component: AudiovisualesComponent },
          { path: 'programacion', component: ProgramacionComponent },
+         { path: 'programacion/proyecto/:id', component: ProyectoComponent },
          { path: 'sobre-mi', component: SobreMiComponent },
          { path: 'contacto', component: ContactoComponent },
          {path: '**', component: HomeComponent}

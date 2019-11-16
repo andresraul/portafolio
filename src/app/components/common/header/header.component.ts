@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { HeaderService } from 'src/app/services/header.service';
 import { HeaderModel } from '../../../models/header.model';
+import { timeout } from 'q';
 
 
 
@@ -13,11 +14,13 @@ import { HeaderModel } from '../../../models/header.model';
 export class HeaderComponent implements OnInit {
   
   @Input()slug: string;
+
   headerData: HeaderModel;
   image: string;
   bg: string;
 
-  constructor(private headerService: HeaderService) { }
+  constructor(private headerService: HeaderService) {
+   }
 
   ngOnInit() {
     this.headerService.getHeader(this.slug).subscribe((data: HeaderModel) => {
