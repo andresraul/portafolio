@@ -5,6 +5,7 @@ const { programacionCtrlsPost, programacionCtrlsPut, programacionCtrlsGet } = re
 app.post('/programacion', [programacionCtrlsPost.createProgramacionSample]);
 app.put('/programacion/:id', [programacionCtrlsPut.updateProgramacion]);
 app.get('/programacion', [programacionCtrlsGet.getAllProgramacion]);
+app.get('/programacion/:id', [programacionCtrlsGet.getProgramacionById]);
 
 
 

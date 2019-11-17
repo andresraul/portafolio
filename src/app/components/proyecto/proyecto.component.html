@@ -1,4 +1,4 @@
-<header class="masthead" [ngStyle]="{'padding-top': '10rem',
+<!-- <header class="masthead" [ngStyle]="{'padding-top': '10rem',
     'padding-bottom': 'calc(10rem - 72px)',
     'background': 'linear-gradient(to bottom, rgba(92, 77, 66, .8) 0, rgba(92, 77, 66, .8) 100%), url(./assets/img/bg-masthead6.jpg)',
     'background-position': 'center',
@@ -18,5 +18,7 @@
             </div>
         </div>
     </div>
-</header>
+</header> -->
+
+<app-header *ngIf="datos" slug="proyecto" [proyecto]="datos"></app-header>
 <p>proyecto works!</p>

@@ -10,7 +10,7 @@ programacionCtrlsGet.getAllProgramacion = async(req, res, next) => {
         .exec((err, programacionDB) => {
 
             if (err) {
-                return res.status(501).json({
+                return res.status(500).json({
                     ok: false,
                     err
                 });
@@ -30,6 +30,34 @@ programacionCtrlsGet.getAllProgramacion = async(req, res, next) => {
             });
         })
 
+}
+
+programacionCtrlsGet.getProgramacionById = async(req, res, next) => {
+    const id = req.params.id;
+
+    Programacion.findById(id, (err, programacionDB) => {
+
+        if (err) {
+            return res.status(500).json({
+                ok: false,
+                err
+            });
+        }
+
+        if (!programacionDB) {
+            res.status(400).json({
+                ok: false,
+                err: {
+                    messaje: 'Registro no encontrado.'
+                }
+            });
+        }
+
+        res.json({
+            ok: true,
+            data: programacionDB
+        });
+    });
 }
 
 module.exports = programacionCtrlsGet;

@@ -18,4 +18,10 @@ getProgramacion() {
   return this.http.get(this.urlProgramacion);
 }
 
+getProgramacionById(id) {
+
+  return this.http.get(`${this.urlProgramacion}/${id}`);
+
+}
+
 }
