@@ -4,3 +4,7 @@
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
+
+.images-modal {
+    background: black;
+}

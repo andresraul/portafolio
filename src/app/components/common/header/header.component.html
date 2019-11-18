@@ -16,15 +16,15 @@
                 <p class="text-white-75 font-weight-light mb-5">{{ headerData.secondaryText}}</p>
 
                 <div *ngIf="headerData.slug === 'home'">
-                    <a class="btn btn-primary btn-xl js-scroll-trigger mr-2" [routerLink]="['/audiovisuales']">Audiovisuales</a>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger ml-2" [routerLink]="['/programacion']">Programación</a>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger m-2" [routerLink]="['/audiovisuales']">Audiovisuales</a>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger m-2" [routerLink]="['/programacion']">Programación</a>
                     <p class="text-white-75 font-weight-light mt-2 text-primary"><strong>¡Trabajemos juntos!</strong></p>
                 </div>
 
 
                 <div *ngIf="headerData.slug === 'proyecto'">
-                    <a class="btn btn-primary btn-xl mr-2" [routerLink]="['/programacion']">Volver</a>
-                    <a target="_blank" class="btn btn-dark btn-xl ml-2" href={{headerData.githuburl}}>Ver el proyecto en GitHub</a>
+                    <a class="btn btn-primary btn-xl m-2" [routerLink]="['/programacion']">Volver</a>
+                    <a target="_blank" class="btn btn-light btn-xl m-2" href={{headerData.githuburl}}><img class="ghbtn" src="./assets/img/github.png" alt=""></a>
                 </div>
             </div>
         </div>

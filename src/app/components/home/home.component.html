@@ -67,7 +67,7 @@
 
 
             <div *ngFor="let photo of photos" class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" (click)="openModal(template, photo.miniatura)">
+                <a class="portfolio-box" (click)="openModal(template, photo.fullSize)">
                     <img class="img-fluid" [src]="photo.miniatura" alt="">
                     <div class="portfolio-box-caption">
                         <div class="project-category text-white-50">

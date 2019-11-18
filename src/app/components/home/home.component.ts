@@ -14,22 +14,28 @@ export class HomeComponent implements OnInit {
 
   photos = [
     {
-      miniatura: '../../../assets/img/portfolio/thumbnails/1.jpg'
+      miniatura: './assets/img/portfolio/thumbnails/1.jpg',
+      fullSize: './assets/img/bg-masthead1.jpg'
     },
     {
-      miniatura: '../../../assets/img/portfolio/thumbnails/2.jpg'
+      miniatura: './assets/img/portfolio/thumbnails/2.jpg',
+      fullSize: './assets/img/bg-masthead2.jpg'
     },
     {
-      miniatura: '../../../assets/img/portfolio/thumbnails/3.jpg'
+      miniatura: './assets/img/portfolio/thumbnails/3.jpg',
+      fullSize: './assets/img/bg-masthead3.jpg'
     },
     {
-      miniatura: '../../../assets/img/portfolio/thumbnails/4.jpg'
+      miniatura: './assets/img/portfolio/thumbnails/4.jpg',
+      fullSize: './assets/img/bg-masthead4.jpg'
     },
     {
-      miniatura: '../../../assets/img/portfolio/thumbnails/5.jpg'
+      miniatura: './assets/img/portfolio/thumbnails/5.jpg',
+      fullSize: './assets/img/bg-masthead5.jpg'
     },
     {
-      miniatura: '../../../assets/img/portfolio/thumbnails/6.jpg'
+      miniatura: './assets/img/portfolio/thumbnails/6.jpg',
+      fullSize: './assets/img/bg-masthead6-2.jpg'
     }
   ]
 
