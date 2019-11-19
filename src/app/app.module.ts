@@ -10,6 +10,8 @@ import { ProgramacionComponent } from './components/programacion/programacion.co
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { FooterComponent } from './components/common/footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 // Rutas
 import { ROUTES } from './routes';
@@ -44,6 +46,7 @@ import { ProyectoComponent } from './components/proyecto/proyecto.component';
     ROUTES,
     HttpClientModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     ModalModule.forRoot()
   ],
   providers: [],

@@ -1,1 +1,39 @@
 <app-header slug="contacto"></app-header>
+
+<form [formGroup]="contactoForm">
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationServer01">First name</label>
+            <input formControlName="name" type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark">
+
+        </div>
+    </div>
+
+
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationServer03">City</label>
+            <input formControlName="email" type="text" class="form-control is-invalid" id="validationServer03" placeholder="City">
+            <div class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationTextarea">Textarea</label>
+            <textarea formControlName="body" class="form-control is-invalid textoemail" id="validationTextarea" placeholder="Required example textarea"></textarea>
+            <div class="invalid-feedback">
+                Please enter a message in the textarea.
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <button type="submit" class="btn btn-outline-info">ENVIAR FORMULARIO</button>
+        </div>
+    </div>
+
+</form>
