@@ -21,4 +21,8 @@ export class ContactoComponent implements OnInit {
     });
   }
 
+  onSubmit(values) {
+    console.log(values);
+  }
+
 }

@@ -1,39 +1,55 @@
 <app-header slug="contacto"></app-header>
 
-<form [formGroup]="contactoForm">
-    <div class="form-row">
-        <div class="col-md-6 mb-3">
-            <label for="validationServer01">First name</label>
-            <input formControlName="name" type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark">
+<div class="container">
 
-        </div>
-    </div>
+    <div class="align-items-center justify-content-center p-2 mt-5 mb-5">
 
-
-    <div class="form-row">
-        <div class="col-md-6 mb-3">
-            <label for="validationServer03">City</label>
-            <input formControlName="email" type="text" class="form-control is-invalid" id="validationServer03" placeholder="City">
-            <div class="invalid-feedback">
-                Please provide a valid city.
+        <div class="row">
+            <div class="col-md-6 mb-3 mx-auto">
+                <h2>Contáctame</h2>
             </div>
         </div>
-    </div>
-
-
-    <div class="form-row">
-        <div class="col-md-6 mb-3">
-            <label for="validationTextarea">Textarea</label>
-            <textarea formControlName="body" class="form-control is-invalid textoemail" id="validationTextarea" placeholder="Required example textarea"></textarea>
-            <div class="invalid-feedback">
-                Please enter a message in the textarea.
+        <div class="row">
+            <div class="col-md-6 mb-3 mx-auto">
+                <h5>Cuéntame qué necesitas y cómo podría ayudarte. Te responderé en breve.</h5>
             </div>
         </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-6 mb-3">
-            <button type="submit" class="btn btn-outline-info">ENVIAR FORMULARIO</button>
-        </div>
+
+        <form [formGroup]="contactoForm" (ngSubmit)="onSubmit(contactoForm.value)">
+            <div class="form-row">
+                <div class="col-md-6 mb-3 mx-auto">
+                    <input formControlName="name" type="text" class="form-control is-valid" id="validationServer01" placeholder="Nombre*" value="Mark">
+
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3 mx-auto">
+                    <input formControlName="email" type="email" class="form-control is-invalid" id="validationServer03" placeholder="Correo electrónico*">
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3 mx-auto">
+                    <textarea formControlName="body" class="form-control is-invalid textoemail" id="validationTextarea" placeholder="¿Cómo puedo ayudarte?*"></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a message in the textarea.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3 mx-auto">
+                    <button type="submit" class="btn btn-outline-info">ENVIAR FORMULARIO</button>
+                </div>
+            </div>
+
+        </form>
+
     </div>
 
-</form>
+</div>
