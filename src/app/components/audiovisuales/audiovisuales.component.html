@@ -1,15 +1,8 @@
 <app-header slug="audiovisuales"></app-header>
 
 
-
-
-
-
-<div *ngIf="data" class="row">
+<div *ngIf="data" class="row animated fadeIn">
     <div class="col-lg-12">
-
-
-
 
         <div class="card bg-dark text-white" *ngFor="let item of data">
             <img [src]="imageUrl + item.img" class="card-img" alt="...">
@@ -23,10 +16,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
 
     </div>
 </div>
