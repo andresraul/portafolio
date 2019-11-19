@@ -13,6 +13,7 @@ export class ProyectoComponent implements OnInit {
 
   id: any;
   datos: any;
+  imgArray: any;
 
   constructor(private activatedRoute: ActivatedRoute,
               public ps: ProgramacionService) {
@@ -32,6 +33,10 @@ export class ProyectoComponent implements OnInit {
       slug: 'proyecto',
       bg: 'bg-masthead6.jpg'
     };
+      
+      if (data.data.imgArray && data.data.imgArray.length > 0) {
+      this.imgArray = data.data.imgArray;
+    }
 
     });
   }

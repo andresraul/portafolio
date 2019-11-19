@@ -1,2 +1,17 @@
 <app-header *ngIf="datos" slug="proyecto" [proyecto]="datos"></app-header>
-<p>proyecto works!</p>
+
+
+<div class="bg-light">
+    <div class="container bg-white">
+        <div class="row">
+            <div *ngFor="let image of imgArray" class="col-md-6 mt-3">
+
+
+                <div class="card">
+                    <img src="http://localhost:3000/images/programacion/image-array/{{image}}" class="card-img-top" alt="...">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
