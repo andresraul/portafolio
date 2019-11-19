@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProgramacionService } from '../../services/programacion.service';
+import { environment } from 'src/environments/environment';
+
 
 
 
@@ -14,6 +16,7 @@ export class ProyectoComponent implements OnInit {
   id: any;
   datos: any;
   imgArray: any;
+  imageUrl = `${environment.homeUrl}/images/programacion/image-array/`;
 
   constructor(private activatedRoute: ActivatedRoute,
               public ps: ProgramacionService) {

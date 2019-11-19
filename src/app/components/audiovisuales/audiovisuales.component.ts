@@ -1,6 +1,7 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { AudiovisualesService } from '../../services/audiovisuales.service';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { environment } from 'src/environments/environment';
 
 
 
@@ -10,6 +11,8 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
   styleUrls: ['./audiovisuales.component.css']
 })
 export class AudiovisualesComponent implements OnInit {
+
+  imageUrl = `${environment.homeUrl}/images/audiovisual/`;
 
   data: [];
 

@@ -12,7 +12,7 @@
 
 
         <div class="card bg-dark text-white" *ngFor="let item of data">
-            <img src="http://localhost:3000/images/audiovisual/{{item.img}}" class="card-img" alt="...">
+            <img [src]="imageUrl + item.img" class="card-img" alt="...">
             <div class="card-img-overlay">
                 <div class="imgbg p-2">
                     <h6 class="card-title">{{ item.title }}</h6>
