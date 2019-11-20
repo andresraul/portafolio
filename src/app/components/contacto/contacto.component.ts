@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms';
+import { ContactoService } from '../../services/contacto.service';
+
+
 
 
 @Component({
@@ -10,6 +13,9 @@ import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms'
 export class ContactoComponent implements OnInit {
 
   contactoForm: FormGroup;
+
+  emailSuccess: any;
+  textError: any;
 
   get name() {
     return this.contactoForm.get('name');
@@ -23,7 +29,8 @@ export class ContactoComponent implements OnInit {
     return this.contactoForm.get('body');
   }
 
-  constructor(public formBuilder: FormBuilder) { }
+  constructor(public formBuilder: FormBuilder,
+              public contactoService: ContactoService) { }
 
   ngOnInit() {
 
@@ -51,11 +58,20 @@ export class ContactoComponent implements OnInit {
 
   onSubmit(form: FormGroup) {
 
-    if(form.invalid) {
+    if (form.invalid) {
       return;
     }
 
-    console.log(form.value);
+    this.contactoService.getAudiovisuales(form.value)
+    .subscribe((data: any) => {
+      if(data.ok) {
+        this.emailSuccess = data.message;
+      }
+    },
+    (err) => {
+      console.log(err);
+      this.textError = err.error.err.message || 'Error de conección.';
+    });
   }
 
   emptyField(control: FormControl): {[s: string]: boolean} {

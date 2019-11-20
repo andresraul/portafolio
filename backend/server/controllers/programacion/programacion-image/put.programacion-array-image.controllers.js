@@ -59,7 +59,7 @@ imageArrayProgramacionCtrlsPost.catchAndSaveImages = async(req, res, next) => {
 
     const obj = { imgArray };
 
-    const options = { new: true, runValidators: true, context: 'query' };
+    const options = { new: false, runValidators: true, context: 'query' };
 
     Programacion.findByIdAndUpdate(id, obj, options, async(err, programacionDB) => {
         if (err) {
@@ -78,6 +78,10 @@ imageArrayProgramacionCtrlsPost.catchAndSaveImages = async(req, res, next) => {
                     messaje: 'El registro no existe.'
                 }
             });
+        }
+
+        if (programacionDB.imgArray && programacionDB.imgArray.length > 0) {
+            removeImage(programacionDB.imgArray);
         }
 
         res.json({

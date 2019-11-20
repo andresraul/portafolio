@@ -4,18 +4,29 @@
 
     <div class="align-items-center justify-content-center p-2 mt-5 mb-5">
 
-        <div class="row">
+
+        <!-- alerts -->
+        <div *ngIf="emailSuccess" class="alert alert-success p-4" role="alert">
+            {{ emailSuccess }}
+        </div>
+        <div *ngIf="textError && !emailSuccess" class="alert alert-danger p-4" role="alert">
+            {{ textError }}
+        </div>
+
+
+
+        <div *ngIf="!emailSuccess" class="row">
             <div class="col-md-6 mb-3 mx-auto">
                 <h2>Contáctame</h2>
             </div>
         </div>
-        <div class="row">
+        <div *ngIf="!emailSuccess" class="row">
             <div class="col-md-6 mb-3 mx-auto">
                 <h5>Cuéntame qué necesitas y cómo podría ayudarte. Te responderé en breve.</h5>
             </div>
         </div>
 
-        <form [formGroup]="contactoForm" (ngSubmit)="onSubmit(contactoForm)">
+        <form *ngIf="!emailSuccess" [formGroup]="contactoForm" (ngSubmit)="onSubmit(contactoForm)">
             <div class="form-row">
                 <div class="col-md-6 mb-3 mx-auto">
                     <input formControlName="name" type="text" class="form-control" id="validationServer01" placeholder="Nombre*" [ngClass]="{'is-invalid': (name.getError('required') && name.touched) || (name.getError('vacio') && name.touched) || (name.getError('minlength') && name.touched), 'is-valid': name.valid}">
@@ -55,7 +66,7 @@
             </div>
             <div class="form-row">
                 <div class="col-md-6 mb-3 mx-auto">
-                    <button type="submit" class="btn btn-outline-info">ENVIAR FORMULARIO</button>
+                    <button type="submit" class="btn btn-outline-info" [disabled]="contactoForm.invalid">ENVIAR FORMULARIO</button>
                 </div>
             </div>
 
