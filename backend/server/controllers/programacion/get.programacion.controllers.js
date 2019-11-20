@@ -45,7 +45,7 @@ programacionCtrlsGet.getProgramacionById = async(req, res, next) => {
         }
 
         if (!programacionDB) {
-            res.status(400).json({
+            return res.status(400).json({
                 ok: false,
                 err: {
                     messaje: 'Registro no encontrado.'

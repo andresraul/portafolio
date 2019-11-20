@@ -15,20 +15,28 @@
             </div>
         </div>
 
-        <form [formGroup]="contactoForm" (ngSubmit)="onSubmit(contactoForm.value)">
+        <form [formGroup]="contactoForm" (ngSubmit)="onSubmit(contactoForm)">
             <div class="form-row">
                 <div class="col-md-6 mb-3 mx-auto">
-                    <input formControlName="name" type="text" class="form-control is-valid" id="validationServer01" placeholder="Nombre*" value="Mark">
+                    <input formControlName="name" type="text" class="form-control" id="validationServer01" placeholder="Nombre*" [ngClass]="{'is-invalid': (name.getError('required') && name.touched) || (name.getError('vacio') && name.touched) || (name.getError('minlength') && name.touched), 'is-valid': name.valid}">
+                    <div *ngIf="(name.getError('required') && name.touched) || (name.getError('vacio') && name.touched)" class="invalid-feedback">
+                        El nombre es obligatorio.
+                    </div>
+                    <div *ngIf="name.getError('minlength') && name.touched && !name.getError('vacio')" class="invalid-feedback">
+                        Un mínimo de 3 caracteres es requerido.
+                    </div>
 
                 </div>
             </div>
 
-
             <div class="form-row">
                 <div class="col-md-6 mb-3 mx-auto">
-                    <input formControlName="email" type="email" class="form-control is-invalid" id="validationServer03" placeholder="Correo electrónico*">
-                    <div class="invalid-feedback">
-                        Please provide a valid city.
+                    <input formControlName="email" type="email" class="form-control" id="validationServer03" placeholder="Correo electrónico*" [ngClass]="{'is-invalid': (email.getError('required') && email.touched) || (email.getError('vacio') && email.touched) || (email.hasError('pattern') && email.touched), 'is-valid': email.valid}">
+                    <div *ngIf="(email.getError('required') && email.touched) || (email.getError('vacio') && email.touched)" class="invalid-feedback">
+                        El correo es obligatorio.
+                    </div>
+                    <div *ngIf="(email.hasError('pattern') && email.touched)" class="invalid-feedback">
+                        Formato de correo no válido.
                     </div>
                 </div>
             </div>
@@ -36,9 +44,12 @@
 
             <div class="form-row">
                 <div class="col-md-6 mb-3 mx-auto">
-                    <textarea formControlName="body" class="form-control is-invalid textoemail" id="validationTextarea" placeholder="¿Cómo puedo ayudarte?*"></textarea>
-                    <div class="invalid-feedback">
-                        Please enter a message in the textarea.
+                    <textarea formControlName="body" class="form-control is-invalid textoemail" id="validationTextarea" placeholder="¿Cómo puedo ayudarte?*" [ngClass]="{'is-invalid': (body.getError('required') && body.touched) || (body.getError('vacio') && body.touched) || (body.getError('minlength') && body.touched), 'is-valid': body.valid}"></textarea>
+                    <div *ngIf="(body.getError('required') && body.touched) || (body.getError('vacio') && body.touched)" class="invalid-feedback">
+                        Este campo es obligatorio.
+                    </div>
+                    <div *ngIf="body.getError('minlength') && body.touched && !body.getError('vacio')" class="invalid-feedback">
+                        Un mínimo de 10 caracteres es requerido.
                     </div>
                 </div>
             </div>
