@@ -1,4 +1,4 @@
-var helper = require('sendgrid').mail;
+const helper = require('sendgrid').mail;
 const contactoCtrlsPost = {};
 
 contactoCtrlsPost.sendEmail = (req, res, next) => {
@@ -24,15 +24,19 @@ contactoCtrlsPost.sendEmail = (req, res, next) => {
         });
     }
 
+    const correo = `Mensaje de: ${name}.
+    Correo: ${email}
+    -----------------
+    ${body}`;
 
-    var from_email = new helper.Email('portafolio@andresmateo.com');
-    var to_email = new helper.Email('andresraul@gmail.com');
-    var subject = `Desde el portafolio, correo de: ${name}`;
-    var content = new helper.Content('text/plain', `Correo de: ${email}. Cuerpo del correo: ${body}`);
-    var mail = new helper.Mail(from_email, subject, to_email, content);
+    const from_email = new helper.Email('portafolio@andresmateo.com');
+    const to_email = new helper.Email('andresraul@gmail.com');
+    const subject = `Desde el portafolio, correo de: ${name}`;
+    const content = new helper.Content('text/plain', correo);
+    const mail = new helper.Mail(from_email, subject, to_email, content);
 
-    var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
-    var request = sg.emptyRequest({
+    let sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+    const request = sg.emptyRequest({
         method: 'POST',
         path: '/v3/mail/send',
         body: mail.toJSON(),
