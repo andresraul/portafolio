@@ -25,8 +25,8 @@ contactoCtrlsPost.sendEmail = (req, res, next) => {
     }
 
 
-    var from_email = new helper.Email('andresraul@gmail.com');
-    var to_email = new helper.Email('portafolio@andresmateo.com');
+    var from_email = new helper.Email('portafolio@andresmateo.com');
+    var to_email = new helper.Email('andresraul@gmail.com');
     var subject = `Desde el portafolio, correo de: ${name}`;
     var content = new helper.Content('text/plain', `Correo de: ${email}. Cuerpo del correo: ${body}`);
     var mail = new helper.Mail(from_email, subject, to_email, content);
