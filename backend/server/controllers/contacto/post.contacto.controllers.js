@@ -39,7 +39,7 @@ contactoCtrlsPost.sendEmail = (req, res, next) => {
     });
 
     sg.API(request, function(error, response) {
-        if (err) {
+        if (error) {
             return res.status(400).json({
                 ok: false,
                 err: {
