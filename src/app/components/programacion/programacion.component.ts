@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProgramacionService } from '../../services/programacion.service';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
+
 
 
 
@@ -12,6 +14,7 @@ import { Router } from '@angular/router';
 export class ProgramacionComponent implements OnInit {
 
   items: any;
+  programacionUrl = `${environment.homeUrl}/images/programacion/`;
 
   constructor(public ps: ProgramacionService,
               private router: Router) {
