@@ -4,5 +4,5 @@
 }
 
 .mouse-photo {
-    cursor: pointer;
+    cursor: pointer !important;
 }
