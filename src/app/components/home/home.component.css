@@ -2,3 +2,7 @@
     height: auto;
     background: black;
 }
+
+.mouse-photo {
+    cursor: pointer;
+}
