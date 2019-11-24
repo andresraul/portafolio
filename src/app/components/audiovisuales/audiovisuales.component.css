@@ -1,14 +1,12 @@
-/*
-
-.imgbg {
-    background: rgba(0, 0, 0, 0.4);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+.btn-outline-primary {
+  font-size: .85rem;
+  border-radius: 50rem;
+  border-width: 2px;
+  padding: 11px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.images-modal {
-    background: black;
+p {
+  color: rgba(0, 0, 0, 0.7);
 }
-
-*/
