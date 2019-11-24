@@ -9,7 +9,7 @@
       <div class="col-lg-6">
         <h2>{{ item.title }}</h2>
         <p>{{ item.body }}</p>
-        <button class="btn btn-outline-info mb-2" (click)="openModal(template, item.title, item.videoid, item.body)">Ver
+        <button class="btn btn-outline-primary mb-2" (click)="openModal(template, item.title, item.videoid, item.body)">Ver
           más</button>
       </div>
     </div>
@@ -19,7 +19,7 @@
 <!-- Modal -->
 
 <ng-template #template class="images-modal">
-  <div class="modal-header images-modal bg-info" *ngIf="videoSelTitle && videoId">
+  <div class="modal-header images-modal bg-primary" *ngIf="videoSelTitle && videoId">
     <h5 class="modal-title pull-left text-white">{{videoSelTitle}}</h5>
     <button type="button" class="close pull-right text-white" aria-label="Close" (click)="modalRef.hide()">
       <span aria-hidden="true">&times;</span>
