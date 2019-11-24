@@ -15,11 +15,11 @@
 
 
 
-        <div *ngIf="!emailSuccess" class="row">
+       <!-- <div *ngIf="!emailSuccess" class="row">
             <div class="col-md-6 mb-3 mx-auto">
                 <h2>Contáctame</h2>
             </div>
-        </div>
+        </div> -->
         <div *ngIf="!emailSuccess" class="row">
             <div class="col-md-6 mb-3 mx-auto">
                 <h5>Cuéntame qué necesitas y cómo podría ayudarte. Te responderé en breve.</h5>
@@ -66,7 +66,7 @@
             </div>
             <div class="form-row">
                 <div class="col-md-6 mb-3 mx-auto">
-                    <button type="submit" class="btn btn-outline-info" [disabled]="contactoForm.invalid">ENVIAR FORMULARIO</button>
+                    <button type="submit" class="btn btn-outline-primary" [disabled]="contactoForm.invalid">ENVIAR FORMULARIO</button>
                 </div>
             </div>
 
