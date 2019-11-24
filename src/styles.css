@@ -49,7 +49,7 @@ Proxima Nova
     --purple: #6f42c1;
     --pink: #e83e8c;
     --red: #dc3545;
-    --orange: #f4623a;
+    --orange: #0097cf;
     --yellow: #ffc107;
     --green: #28a745;
     --teal: #20c997;
@@ -57,7 +57,7 @@ Proxima Nova
     --white: #fff;
     --gray: #6c757d;
     --gray-dark: #343a40;
-    --primary: #f4623a;
+    --primary: #0097cf;
     --secondary: #6c757d;
     --success: #28a745;
     --info: #17a2b8;
@@ -206,7 +206,7 @@ sup {
 }
 
 a {
-    color: #f4623a;
+    color: #0097cf;
     text-decoration: none;
     background-color: transparent
 }
@@ -2427,14 +2427,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #f4623a;
-    border-color: #f4623a
+    background-color: #0097cf;
+    border-color: #0097cf
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #f24516;
-    border-color: #ee3e0d
+    background-color: #0370af;
+    border-color: #0370af
 }
 
 .btn-primary.focus,
@@ -2445,16 +2445,16 @@ fieldset:disabled a.btn {
 .btn-primary.disabled,
 .btn-primary:disabled {
     color: #fff;
-    background-color: #f4623a;
-    border-color: #f4623a
+    background-color: #0097cf;
+    border-color: #0097cf
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #ee3e0d;
-    border-color: #e23a0d
+    background-color: #0370af;
+    border-color: #0370af
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -2730,14 +2730,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-    color: #f4623a;
-    border-color: #f4623a
+    color: #0097cf;
+    border-color: #0097cf
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #f4623a;
-    border-color: #f4623a
+    background-color: #0097cf;
+    border-color: #0097cf
 }
 
 .btn-outline-primary.focus,
@@ -2747,7 +2747,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-    color: #f4623a;
+    color: #0097cf;
     background-color: transparent
 }
 
@@ -2755,8 +2755,8 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .show>.btn-outline-primary.dropdown-toggle {
     color: #fff;
-    background-color: #f4623a;
-    border-color: #f4623a
+    background-color: #0097cf;
+    border-color: #0097cf
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
@@ -3019,7 +3019,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
     font-weight: 400;
-    color: #f4623a;
+    color: #0097cf;
     text-decoration: none
 }
 
@@ -3327,7 +3327,7 @@ input[type=submit].btn-block {
 .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #f4623a
+    background-color: #0097cf
 }
 
 .dropdown-item.disabled,
@@ -3685,8 +3685,8 @@ input[type=submit].btn-block {
 
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
-    border-color: #f4623a;
-    background-color: #f4623a
+    border-color: #0097cf;
+    background-color: #0097cf
 }
 
 .custom-control-input:focus~.custom-control-label::before {
@@ -3750,8 +3750,8 @@ input[type=submit].btn-block {
 }
 
 .custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
-    border-color: #f4623a;
-    background-color: #f4623a
+    border-color: #0097cf;
+    background-color: #0097cf
 }
 
 .custom-checkbox .custom-control-input:indeterminate~.custom-control-label::after {
@@ -3977,7 +3977,7 @@ input[type=submit].btn-block {
     width: 1rem;
     height: 1rem;
     margin-top: -.25rem;
-    background-color: #f4623a;
+    background-color: #0097cf;
     border: 0;
     border-radius: 1rem;
     transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -4008,7 +4008,7 @@ input[type=submit].btn-block {
 .custom-range::-moz-range-thumb {
     width: 1rem;
     height: 1rem;
-    background-color: #f4623a;
+    background-color: #0097cf;
     border: 0;
     border-radius: 1rem;
     transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -4042,7 +4042,7 @@ input[type=submit].btn-block {
     margin-top: 0;
     margin-right: .2rem;
     margin-left: .2rem;
-    background-color: #f4623a;
+    background-color: #0097cf;
     border: 0;
     border-radius: 1rem;
     transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -4183,7 +4183,7 @@ input[type=submit].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #f4623a
+    background-color: #0097cf
 }
 
 .nav-fill .nav-item {
@@ -4856,7 +4856,7 @@ input[type=submit].btn-block {
     padding: .5rem .75rem;
     margin-left: -1px;
     line-height: 1.25;
-    color: #f4623a;
+    color: #0097cf;
     background-color: #fff;
     border: 1px solid #dee2e6
 }
@@ -4889,8 +4889,8 @@ input[type=submit].btn-block {
 .page-item.active .page-link {
     z-index: 1;
     color: #fff;
-    background-color: #f4623a;
-    border-color: #f4623a
+    background-color: #0097cf;
+    border-color: #0097cf
 }
 
 .page-item.disabled .page-link {
@@ -4974,13 +4974,13 @@ a.badge:hover {
 
 .badge-primary {
     color: #fff;
-    background-color: #f4623a
+    background-color: #0097cf
 }
 
 a.badge-primary:focus,
 a.badge-primary:hover {
     color: #fff;
-    background-color: #ee3e0d
+    background-color: #0370af
 }
 
 a.badge-primary.focus,
@@ -5301,7 +5301,7 @@ a.badge-dark:focus {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #f4623a;
+    background-color: #0097cf;
     transition: width .6s ease
 }
 
@@ -5393,8 +5393,8 @@ a.badge-dark:focus {
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #f4623a;
-    border-color: #f4623a
+    background-color: #0097cf;
+    border-color: #0097cf
 }
 
 .list-group-horizontal {
@@ -6524,14 +6524,14 @@ a.close.disabled {
 }
 
 .bg-primary {
-    background-color: #f4623a!important
+    background-color: #0097cf!important
 }
 
 a.bg-primary:focus,
 a.bg-primary:hover,
 button.bg-primary:focus,
 button.bg-primary:hover {
-    background-color: #ee3e0d!important
+    background-color: #0370af!important
 }
 
 .bg-secondary {
@@ -6660,7 +6660,7 @@ button.bg-dark:hover {
 }
 
 .border-primary {
-    border-color: #f4623a!important
+    border-color: #0097cf!important
 }
 
 .border-secondary {
@@ -9692,7 +9692,7 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-    color: #f4623a!important
+    color: #0097cf!important
 }
 
 a.text-primary:focus,
@@ -9900,7 +9900,7 @@ html {
 hr.divider {
     max-width: 3.25rem;
     border-width: .2rem;
-    border-color: #f4623a
+    border-color: #0097cf
 }
 
 hr.light {
@@ -9941,16 +9941,18 @@ hr.light {
     font-family: "proxima-nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
     font-size: .9rem;
-    padding: .75rem 0
+    padding: .75rem 0;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #f4623a
+    color: #0097cf
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
-    color: #f4623a!important
+    color: #0097cf!important
 }
 
 @media (min-width:992px) {
@@ -9982,13 +9984,13 @@ hr.light {
         color: #212529
     }
     #mainNav.navbar-scrolled .navbar-brand:hover {
-        color: #f4623a
+        color: #0097cf
     }
     #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
         color: #212529
     }
     #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-        color: #f4623a
+        color: #0097cf
     }
 }
 
@@ -10009,7 +10011,7 @@ header.masthead h1 {
 
 @media (min-width:992px) {
     header.masthead {
-        height: 100vh;
+        height: 80vh;
         min-height: 40rem;
         padding-top: 72px;
         padding-bottom: 0

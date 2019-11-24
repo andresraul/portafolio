@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  
+
   @Input()slug: string;
   @Input()proyecto: any;
 
@@ -32,14 +32,14 @@ export class HeaderComponent implements OnInit {
 
       this.headerService.getHeader(this.slug).subscribe((data: HeaderModel) => {
         this.headerData = data;
-        this.bg = `linear-gradient(to bottom, rgba(92, 77, 66, .8) 0, rgba(92, 77, 66, .8) 100%), url(./assets/img/${data.bg})`;
+        this.bg = `linear-gradient(to bottom, rgba(32, 24, 18, .8) 0, rgba(32, 24, 18, .8) 100%), url(./assets/img/${data.bg})`;
       });
     } else {
-      
-        this.headerData = this.proyecto;
-        this.bg = `linear-gradient(to bottom, rgba(92, 77, 66, .8) 0, rgba(92, 77, 66, .8) 100%), url(./assets/img/${this.proyecto.bg})`;
 
-      
+        this.headerData = this.proyecto;
+        this.bg = `linear-gradient(to bottom, rgba(32, 24, 18, .8) 0, rgba(32, 24, 18, .8) 100%), url(./assets/img/${this.proyecto.bg})`;
+
+
     }
 
   }
