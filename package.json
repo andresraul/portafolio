@@ -24,7 +24,7 @@
         "bootstrap": "^4.3.1",
         "cors": "^2.8.5",
         "express": "^4.17.1",
-        "express-fileupload": "^1.1.6-alpha.6",
+        "express-fileupload": "^1.1.9",
         "jquery": "^3.4.1",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0",
